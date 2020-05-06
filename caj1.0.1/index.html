@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>炒菜机</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script>
+        (function () {
+            remChange()
+            window.addEventListener('resize', remChange)
+            function remChange() {
+                const html = document.querySelector('html')
+                const width = html.getBoundingClientRect().width
+                html.style.fontSize = width / 10 + 'px'
+            }
+
+        })()
+    </script>
+</head>
+
+<body>
+    <div id="app"></div>
+</body>
+
+</html>
